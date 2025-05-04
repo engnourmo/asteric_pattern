@@ -14,7 +14,7 @@ int l_not_f(int num);
 int XOR_f(int num1, int num2);
 int Reminder_f(int num1, int num2);
 int increment_f(int num);
-int devcrement_f(int num);
+int decrement_f(int num);
 int factorial_f(int num);
 
 //main function
@@ -35,40 +35,40 @@ int main(){
     }
     switch(operator){
         case ('+') :
-            printf("Result: %d\n", add_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", add_f(number_1, number_2)); 
             break;
         case ('-') :
-            printf("Result: %d\n", sub_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", sub_f(number_1, number_2));
             break;
         case ('*') :
-            printf("Result: %d\n", mul_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", mul_f(number_1, number_2)); 
             break;
         case ('/') :
-            printf("Result: %d\n", devide_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", devide_f(number_1, number_2)); 
             break;
         case ('&') :
-            printf("Result: %d\n", l_AND_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", l_AND_f(number_1, number_2)); 
             break;
         case ('|') :
-            printf("Result: %d\n", L_OR_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", L_OR_f(number_1, number_2)); 
             break;
         case ('~') :
-            printf("Result: %d\n", l_not_f(number_1)); // Print result
+            printf("Result: %d\n", l_not_f(number_1)); 
             break;
         case ('^') :
-            printf("Result: %d\n", XOR_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", XOR_f(number_1, number_2)); 
             break;
         case ('R') :
-            printf("Result: %d\n", Reminder_f(number_1, number_2)); // Print result
+            printf("Result: %d\n", Reminder_f(number_1, number_2)); 
             break;
         case ('I') :
-            printf("Result: %d\n", increment_f(number_1)); // Print result
+            printf("Result: %d\n", increment_f(number_1)); 
             break;
         case ('D') :
-            printf("Result: %d\n", devcrement_f(number_1)); // Print result
+            printf("Result: %d\n", decrement_f(number_1)); 
             break;
         case ('F') :
-            printf("Result: %d\n", factorial_f(number_1)); // Print result
+            printf("Result: %d\n", factorial_f(number_1));
             break;
         default :
             printf("invalid operator!!\n");
@@ -131,7 +131,7 @@ int increment_f(int num){
     return (++num);
 }
 
-int devcrement_f(int num){
+int decrement_f(int num){
     return (--num);
 }
 
