@@ -23,6 +23,7 @@ int main(){
     printf("+ -> add\n- -> sub\n* -> mul\n/ -> devide\n& -> logic AND\n| -> logic OR\n~ -> loguc NOT\n^ -> logic XOR\nR -> remider\nI -> increment\nD -> decrement\nF ->factorial\n");
     printf("enter the operand : ");
     scanf("%c", &operator);
+    fflush(stdin);
     if((operator == 'F') || (operator == 'I') || (operator == '~') || (operator == 'D')){
         printf("enter you number : ");
         scanf("%i", &number_1);
@@ -30,8 +31,10 @@ int main(){
     else{
         printf("enter your first number : ");
         scanf("%i", &number_1);
+        fflush(stdin);
         printf("enter your second number : ");
         scanf("%i", &number_2);
+        fflush(stdin);
     }
     switch(operator){
         case '+' :
